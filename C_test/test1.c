@@ -1,16 +1,12 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 main() {
-	int year;
-	scanf("%d", &year);
-
-	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
-	{
-		printf("1");
-	}
-	else {
-		printf("0");
-	}
+	int student_name[6] = {1,2,3,4,5,6};
+	int a = 0;
+		while (a < 6) {
+			student_name[a] = a + 1;
+			a++;
+		}
 }
 
 /* 연도를 입력 하였을때 윤년이라면 1 윤년이 아니라면 0을 출력하게하시오
